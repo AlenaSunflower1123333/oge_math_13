@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Задания ОГЭ (Тип 13)</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 20px;
+    font-family: 'Times New Roman', Times, serif; /* Шрифт как на сайте */
+    background: #fff; color: #000; line-height: 1.5;
+    font-size: 18px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+  
+  /* Блок задания */
+  .task-block { margin-bottom: 50px; }
+  
+  /* Заголовок задания (номер) */
+  .task-header {
+    display: flex; align-items: center; gap: 15px; margin-bottom: 15px;
+  }
+  .task-num-box {
+    border: 2px solid #333; padding: 2px 8px; font-weight: bold; font-size: 1.1em;
+  }
+  .task-type {
+    font-weight: bold; font-size: 1.1em; color: #000;
+  }
+  
+  /* Текст задания */
+  .task-text {
+    font-size: 1.2em; margin-bottom: 20px; text-indent: 20px;
+  }
+  .task-text-italic {
+    font-style: italic; margin-bottom: 20px; text-indent: 20px;
+  }
+  
+  /* Система уравнений (фигурная скобка) */
+  .system-eq {
+    display: inline-flex; align-items: center; gap: 10px;
+    vertical-align: middle; margin: 0 10px;
+  }
+  .system-bracket {
+    font-size: 2.5em; font-weight: 300; line-height: 1; transform: scaleY(1.2);
+  }
+  .system-lines { display: flex; flex-direction: column; gap: 5px; }
+  .system-lines span { font-size: 1.1em; }
+  
+  /* Сетка для вариантов (2x2) */
+  .options-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px;
+  }
+  @media (max-width: 700px) {
+    .options-grid { grid-template-columns: 1fr; }
+  }
+  
+  /* Карточка варианта */
+  .option-item {
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .option-label { font-size: 1.2em; margin-bottom: 10px; align-self: flex-start; }
+  
+  /* Варианты ответов текстом (столбиком) */
+  .text-options { margin-top: 20px; padding-left: 40px; }
+  .text-options div { margin-bottom: 8px; font-size: 1.1em; }
+  
+  /* Стили для математических выражений */
+  .math { font-family: 'Times New Roman', Times, serif; font-style: italic; }
+  .math sup { font-size: 0.7em; vertical-align: super; font-style: normal; }
+  .frac {
+    display: inline-flex; flex-direction: column; align-items: center;
+    vertical-align: middle; font-size: 0.9em; margin: 0 3px;
+  }
+  .frac .num { border-bottom: 1px solid #000; padding: 0 4px; }
+  .frac .den { padding: 0 4px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ЗАДАНИЕ 1 -->
+  <div class="task-block">
+    <div class="task-header">
+      <div class="task-num-box">1</div>
+      <div class="task-type">Тип 13 № 348461</div>
+    </div>
+    <div class="task-text">Укажите решение системы неравенств:</div>
+    
+    <div style="text-align: center; margin: 20px 0;">
+      <div class="system-eq">
+        <div class="system-bracket">{</div>
+        <div class="system-lines">
+          <span>x + 3 &ge; &minus;2,</span>
+          <span>x + 1,1 &ge; 0.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="options-grid">
+      <!-- Вариант 1 -->
+      <div class="option-item">
+        <div class="option-label">1)</div>
+        <svg width="280" height="80" viewBox="0 0 280 80">
+          <!-- Ось -->
+          <line x1="10" y1="40" x2="270" y2="40" stroke="#000" stroke-width="1.5"/>
+          <polygon points="270,35 280,40 270,45" fill="#000"/>
+          <text x="260" y="25" font-family="Times New Roman" font-style="italic" font-size="16">x</text>
+          <!-- Точка -5 -->
+          <circle cx="80" cy="40" r="4" fill="#000"/>
+          <text x="65" y="65" font-family="Times New Roman" font-size="16">&minus;5</text>
+          <!-- Штриховка вправо от -5 -->
+          <line x1="84" y1="30" x2="270" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+        </svg>
+      </div>
+      <!-- Вариант 2 -->
+      <div class="option-item">
+        <div class="option-label">2)</div>
+        <svg width="280" height="80" viewBox="0 0 280 80">
+          <line x1="10" y1="40" x2="270" y2="40" stroke="#000" stroke-width="1.5"/>
+          <polygon points="270,35 280,40 270,45" fill="#000"/>
+          <text x="260" y="25" font-family="Times New Roman" font-style="italic" font-size="16">x</text>
+          <!-- Точка -1.1 -->
+          <circle cx="170" cy="40" r="4" fill="#000"/>
+          <text x="155" y="65" font-family="Times New Roman" font-size="16">&minus;1,1</text>
+          <!-- Штриховка вправо -->
+          <line x1="174" y1="30" x2="270" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+        </svg>
+      </div>
+      <!-- Вариант 3 -->
+      <div class="option-item">
+        <div class="option-label">3)</div>
+        <svg width="280" height="80" viewBox="0 0 280 80">
+          <line x1="10" y1="40" x2="270" y2="40" stroke="#000" stroke-width="1.5"/>
+          <polygon points="270,35 280,40 270,45" fill="#000"/>
+          <text x="260" y="25" font-family="Times New Roman" font-style="italic" font-size="16">x</text>
+          <!-- Точка -5 -->
+          <circle cx="60" cy="40" r="4" fill="#000"/>
+          <text x="45" y="65" font-family="Times New Roman" font-size="16">&minus;5</text>
+          <!-- Точка -1.1 -->
+          <circle cx="180" cy="40" r="4" fill="#000"/>
+          <text x="165" y="65" font-family="Times New Roman" font-size="16">&minus;1,1</text>
+          <!-- Штриховка между -->
+          <line x1="64" y1="30" x2="176" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+        </svg>
+      </div>
+      <!-- Вариант 4 -->
+      <div class="option-item">
+        <div class="option-label">4)</div>
+        <svg width="280" height="80" viewBox="0 0 280 80">
+          <line x1="10" y1="40" x2="270" y2="40" stroke="#000" stroke-width="1.5"/>
+          <polygon points="270,35 280,40 270,45" fill="#000"/>
+          <text x="260" y="25" font-family="Times New Roman" font-style="italic" font-size="16">x</text>
+          <!-- Точка -5 -->
+          <circle cx="70" cy="40" r="4" fill="#000"/>
+          <text x="55" y="65" font-family="Times New Roman" font-size="16">&minus;5</text>
+          <!-- Точка -1.1 -->
+          <circle cx="190" cy="40" r="4" fill="#000"/>
+          <text x="175" y="65" font-family="Times New Roman" font-size="16">&minus;1,1</text>
+          <!-- Штриховка снаружи -->
+          <line x1="10" y1="30" x2="66" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+          <line x1="194" y1="30" x2="270" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ЗАДАНИЕ 2 -->
+  <div class="task-block">
+    <div class="task-header">
+      <div class="task-num-box">2</div>
+      <div class="task-type">Тип 13 № 333136</div>
+    </div>
+    <div class="task-text">
+      Решите систему неравенств 
+      <span class="system-eq" style="margin: 0 15px;">
+        <span class="system-bracket" style="font-size: 1.5em;">{</span>
+        <span class="system-lines" style="font-size: 0.9em;">
+          <span>x &gt; &minus;1,</span>
+          <span>3 &minus; x &gt; 0.</span>
+        </span>
+      </span>
+    </div>
+    
+    <div class="task-text">На каком рисунке изображено множество её решений?<br>В ответе укажите номер правильного варианта.</div>
+
+    <div class="options-grid">
+      <!-- Вариант 1 -->
+      <div class="option-item">
+        <div class="option-label">1)</div>
+        <svg width="280" height="80" viewBox="0 0 280 80">
+          <line x1="10" y1="40" x2="270" y2="40" stroke="#000" stroke-width="1.5"/>
+          <polygon points="270,35 280,40 270,45" fill="#000"/>
+          <text x="260" y="25" font-family="Times New Roman" font-style="italic" font-size="16">x</text>
+          <!-- Точка 3 (выколотая) -->
+          <circle cx="180" cy="40" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+          <text x="175" y="65" font-family="Times New Roman" font-size="16">3</text>
+          <!-- Штриховка влево -->
+          <line x1="10" y1="30" x2="176" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+        </svg>
+      </div>
+      <!-- Вариант 2 -->
+      <div class="option-item">
+        <div class="option-label">2)</div>
+        <svg width="280" height="80" viewBox="0 0 280 80">
+          <line x1="10" y1="40" x2="270" y2="40" stroke="#000" stroke-width="1.5"/>
+          <polygon points="270,35 280,40 270,45" fill="#000"/>
+          <text x="260" y="25" font-family="Times New Roman" font-style="italic" font-size="16">x</text>
+          <!-- Точка -1 -->
+          <circle cx="80" cy="40" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+          <text x="70" y="65" font-family="Times New Roman" font-size="16">&minus;1</text>
+          <!-- Точка 3 -->
+          <circle cx="200" cy="40" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+          <text x="195" y="65" font-family="Times New Roman" font-size="16">3</text>
+          <!-- Штриховка между -->
+          <line x1="84" y1="30" x2="196" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+        </svg>
+      </div>
+      <!-- Вариант 3 -->
+      <div class="option-item">
+        <div class="option-label">3)</div>
+        <div style="font-size: 1.1em; margin-top: 20px;">система не имеет решений</div>
+      </div>
+      <!-- Вариант 4 -->
+      <div class="option-item">
+        <div class="option-label">4)</div>
+        <svg width="280" height="80" viewBox="0 0 280 80">
+          <line x1="10" y1="40" x2="270" y2="40" stroke="#000" stroke-width="1.5"/>
+          <polygon points="270,35 280,40 270,45" fill="#000"/>
+          <text x="260" y="25" font-family="Times New Roman" font-style="italic" font-size="16">x</text>
+          <!-- Точка -1 -->
+          <circle cx="80" cy="40" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+          <text x="70" y="65" font-family="Times New Roman" font-size="16">&minus;1</text>
+          <!-- Штриховка вправо -->
+          <line x1="84" y1="30" x2="270" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ЗАДАНИЕ 3 -->
+  <div class="task-block">
+    <div class="task-header">
+      <div class="task-num-box">3</div>
+      <div class="task-type">Тип 13 № 338497</div>
+    </div>
+    <div class="task-text">На каком из рисунков изображено решение неравенства <span class="math">81x<sup>2</sup> &lt; 16</span>?<br>В ответе укажите номер правильного варианта.</div>
+
+    <div class="options-grid">
+      <!-- Вариант 1 -->
+      <div class="option-item">
+        <div class="option-label">1)</div>
+        <svg width="280" height="80" viewBox="0 0 280 80">
+          <line x1="10" y1="40" x2="270" y2="40" stroke="#000" stroke-width="1.5"/>
+          <polygon points="270,35 280,40 270,45" fill="#000"/>
+          <text x="260" y="25" font-family="Times New Roman" font-style="italic" font-size="16">x</text>
+          <!-- Точки -4/9 и 4/9 -->
+          <circle cx="100" cy="40" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+          <text x="90" y="65" font-family="Times New Roman" font-size="16">&minus;4/9</text>
+          <circle cx="180" cy="40" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+          <text x="175" y="65" font-family="Times New Roman" font-size="16">4/9</text>
+          <!-- Штриховка снаружи -->
+          <line x1="10" y1="30" x2="96" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+          <line x1="184" y1="30" x2="270" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+        </svg>
+      </div>
+      <!-- Вариант 2 -->
+      <div class="option-item">
+        <div class="option-label">2)</div>
+        <svg width="280" height="80" viewBox="0 0 280 80">
+          <line x1="10" y1="40" x2="270" y2="40" stroke="#000" stroke-width="1.5"/>
+          <polygon points="270,35 280,40 270,45" fill="#000"/>
+          <text x="260" y="25" font-family="Times New Roman" font-style="italic" font-size="16">x</text>
+          <!-- Точка 4/9 -->
+          <circle cx="180" cy="40" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+          <text x="175" y="65" font-family="Times New Roman" font-size="16">4/9</text>
+          <!-- Штриховка влево -->
+          <line x1="10" y1="30" x2="176" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+        </svg>
+      </div>
+      <!-- Вариант 3 -->
+      <div class="option-item">
+        <div class="option-label">3)</div>
+        <svg width="280" height="80" viewBox="0 0 280 80">
+          <line x1="10" y1="40" x2="270" y2="40" stroke="#000" stroke-width="1.5"/>
+          <polygon points="270,35 280,40 270,45" fill="#000"/>
+          <text x="260" y="25" font-family="Times New Roman" font-style="italic" font-size="16">x</text>
+          <!-- Точка -4/9 -->
+          <circle cx="100" cy="40" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+          <text x="90" y="65" font-family="Times New Roman" font-size="16">&minus;4/9</text>
+          <!-- Штриховка влево -->
+          <line x1="10" y1="30" x2="96" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+        </svg>
+      </div>
+      <!-- Вариант 4 -->
+      <div class="option-item">
+        <div class="option-label">4)</div>
+        <svg width="280" height="80" viewBox="0 0 280 80">
+          <line x1="10" y1="40" x2="270" y2="40" stroke="#000" stroke-width="1.5"/>
+          <polygon points="270,35 280,40 270,45" fill="#000"/>
+          <text x="260" y="25" font-family="Times New Roman" font-style="italic" font-size="16">x</text>
+          <!-- Точки -4/9 и 4/9 -->
+          <circle cx="100" cy="40" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+          <text x="90" y="65" font-family="Times New Roman" font-size="16">&minus;4/9</text>
+          <circle cx="180" cy="40" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+          <text x="175" y="65" font-family="Times New Roman" font-size="16">4/9</text>
+          <!-- Штриховка между -->
+          <line x1="104" y1="30" x2="176" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ЗАДАНИЕ 4 -->
+  <div class="task-block">
+    <div class="task-header">
+      <div class="task-num-box">4</div>
+      <div class="task-type">Тип 13 № 314604</div>
+    </div>
+    <div class="task-text">Решение какого из данных неравенств изображено на рисунке?<br>В ответе укажите номер правильного варианта.</div>
+    
+    <div style="text-align: center; margin: 20px 0;">
+      <svg width="350" height="80" viewBox="0 0 350 80">
+        <line x1="10" y1="40" x2="340" y2="40" stroke="#000" stroke-width="1.5"/>
+        <polygon points="340,35 350,40 340,45" fill="#000"/>
+        <text x="330" y="25" font-family="Times New Roman" font-style="italic" font-size="16">x</text>
+        <!-- Точки -3 и 3 -->
+        <circle cx="120" cy="40" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+        <text x="110" y="65" font-family="Times New Roman" font-size="16">&minus;3</text>
+        <circle cx="240" cy="40" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+        <text x="235" y="65" font-family="Times New Roman" font-size="16">3</text>
+        <!-- Штриховка между -->
+        <line x1="124" y1="30" x2="236" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+      </svg>
+    </div>
+
+    <div class="text-options">
+      <div>1) x<sup>2</sup> + 9 &lt; 0</div>
+      <div>2) x<sup>2</sup> + 9 &gt; 0</div>
+      <div>3) x<sup>2</sup> &minus; 9 &lt; 0</div>
+      <div>4) x<sup>2</sup> &minus; 9 &gt; 0</div>
+    </div>
+  </div>
+
+  <!-- ЗАДАНИЕ 5 -->
+  <div class="task-block">
+    <div class="task-header">
+      <div class="task-num-box">5</div>
+      <div class="task-type">Тип 13 № 314596</div>
+    </div>
+    <div class="task-text">Решение какого из данных неравенств изображено на рисунке?<br>В ответе укажите номер правильного варианта.</div>
+    
+    <div style="text-align: center; margin: 20px 0;">
+      <svg width="350" height="80" viewBox="0 0 350 80">
+        <line x1="10" y1="40" x2="340" y2="40" stroke="#000" stroke-width="1.5"/>
+        <polygon points="340,35 350,40 340,45" fill="#000"/>
+        <text x="330" y="25" font-family="Times New Roman" font-style="italic" font-size="16">x</text>
+        <!-- Точки -3 и 3 -->
+        <circle cx="120" cy="40" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+        <text x="110" y="65" font-family="Times New Roman" font-size="16">&minus;3</text>
+        <circle cx="240" cy="40" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+        <text x="235" y="65" font-family="Times New Roman" font-size="16">3</text>
+        <!-- Штриховка снаружи -->
+        <line x1="10" y1="30" x2="116" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+        <line x1="244" y1="30" x2="340" y2="30" stroke="#d1763d" stroke-width="1.5" stroke-dasharray="4,4"/>
+      </svg>
+    </div>
+
+    <div class="text-options">
+      <div>1) x<sup>2</sup> &minus; 9 &gt; 0</div>
+      <div>2) x<sup>2</sup> + 9 &gt; 0</div>
+      <div>3) x<sup>2</sup> &minus; 9 &lt; 0</div>
+      <div>4) x<sup>2</sup> + 9 &lt; 0</div>
+    </div>
+  </div>
+
+  <!-- ЗАДАНИЕ 6 -->
+  <div class="task-block">
+    <div class="task-header">
+      <div class="task-num-box">6</div>
+      <div class="task-type">Тип 13 № 311312</div>
+    </div>
+    <div class="task-text">Решите неравенство <span class="math">x<sup>2</sup> + 3x &gt; 0</span>.<br>В ответе укажите номер правильного варианта.</div>
+
+    <div class="text-options">
+      <div>1) (&minus;&infin;; &minus;3) &cup; (0; +&infin;)</div>
+      <div>2) (&minus;3; 0)</div>
+      <div>3) [&minus;3; 0]</div>
+      <div>4) (&minus;&infin;; &minus;3] &cup; [0; +&infin;)</div>
+    </div>
+  </div>
+
+  <!-- ЗАДАНИЕ 7 -->
+  <div class="task-block">
+    <div class="task-header">
+      <div class="task-num-box">7</div>
+      <div class="task-type">Тип 13 № 311310</div>
+    </div>
+    <div class="task-text">Решите неравенство <span class="math">x<sup>2</sup> &minus; 4x &lt; 0</span>.<br>В ответе укажите номер правильного варианта.</div>
+
+    <div class="text-options">
+      <div>1) [0; 4]</div>
+      <div>2) (&minus;&infin;; 0) &cup; (4; +&infin;)</div>
+      <div>3) (0; 4)</div>
+      <div>4) (&minus;&infin;; 0] &cup; [4; +&infin;)</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
